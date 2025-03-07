@@ -1,4 +1,4 @@
-/this code makes the hollow-rectangle
+//this code makes the hollow-rectangle
 public class HollowRect {
     public static void main(String[]args){
         int a = 4;
@@ -18,3 +18,13 @@ public class HollowRect {
         }
     }
 }
+
+
+//output
+*******
+*     *
+*     *
+*******
+
+
+ 
