@@ -1,0 +1,25 @@
+public class Inverted_Right {
+    public static void main(String[]args){
+        int a= 5;
+        //outerloop
+        for (int i = 1; i<=a; i++){
+            //inner looop
+            for (int j = 1; j<=a-i; j++){
+                System.out.print(" ");
+            }
+            // make a for loop for printing the star
+            for(int j = 1; j<= i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+//output
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
