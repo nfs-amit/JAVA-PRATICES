@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Prime_no {
+    // Method to check if a number is prime
+    public static boolean isPrime(int num) {
+        if (num <= 1) return false; // 0 and 1 are not prime numbers
+        if (num == 2) return true;  // 2 is the only even prime number
+
+        // Check divisibility from 2 to sqrt(num) to optimize performance
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) return false; // If divisible, not a prime
+        }
+        return true; 
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number to check if it's prime: ");
+        int number = scanner.nextInt(); // Taking user input
+       // scanner.close();
+
+        // Calling the method and displaying the result
+        if (isPrime(number)) {
+            System.out.println(number + " is a Prime Number.");
+        } else {
+            System.out.println(number + " is NOT a Prime Number.");
+        }
+    }
+}
